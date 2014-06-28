@@ -1,0 +1,8 @@
+@import "bootstrap";
+.status {border-bottom: solid 1px #555;
+padding:12px;
+}
+.status p{margin:4px 0;}
+.status.hover{background:#FAFAFA;}
+.status .admin{display:none;}
+.status.hover .admin{display:inline;}

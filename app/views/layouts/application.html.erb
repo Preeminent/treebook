@@ -8,7 +8,33 @@
 </head>
 <body>
 
-<%= yield %>
 
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+   
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#">TREEBOOK</a>
+      <ul class="nav navbar-nav">
+      	<li><%= link_to "All Statuses", statuses_path %></li>
+      </ul>
+
+    </div>
+
+   
+     
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+
+
+
+
+
+<div class="container">
+<%= yield %>
+</div>
 </body>
 </html>
