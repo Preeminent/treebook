@@ -8,7 +8,8 @@ has_many :statuses
 
 validates :first_name, presence: true
 validates :last_name, presence: true
-validates :profile_name, presence: true, uniqueness: true
+validates :profile_name, presence: true, uniqueness: true,
+	format: { with: /\A[a-z]{5}\z/, message: 'Must be formatted correctly.'}
 
 
 	def full_name
